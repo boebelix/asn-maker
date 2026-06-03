@@ -48,12 +48,12 @@ uv run python asn_labels.py 1 50 -r -o regal_a.pdf
 
 ### Optionen
 
-| Argument | Beschreibung |
-|---|---|
-| `start` | Erste ASN-Nummer |
-| `end` | Letzte ASN-Nummer |
+| Argument          | Beschreibung                              |
+| ----------------- | ----------------------------------------- |
+| `start`           | Erste ASN-Nummer                          |
+| `end`             | Letzte ASN-Nummer                         |
 | `-r`, `--reverse` | Umgekehrte Reihenfolge (für Rollen-Druck) |
-| `-o`, `--output` | Ausgabedatei (Standard: `asn_labels.pdf`) |
+| `-o`, `--output`  | Ausgabedatei (Standard: `asn_labels.pdf`) |
 
 ### Warum `--reverse`?
 
@@ -75,7 +75,7 @@ Entweder über den Badge oben (sobald das Notebook im Repo liegt), oder manuell:
 
 ```python
 # Zelle 1 – Abhängigkeiten installieren
-!pip install -q qrcode[pil] reportlab Pillow
+!uv pip install -q qrcode[pil] reportlab Pillow
 
 # Zelle 2 – Skript laden
 !wget -q https://raw.githubusercontent.com/boebelix/asn-maker/main/asn_labels.py
